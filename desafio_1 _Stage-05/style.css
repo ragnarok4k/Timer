@@ -1,0 +1,121 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+
+  display: grid;
+  place-items: center;
+
+  height: 100vh;
+
+  margin-top: -10rem;
+}
+
+main{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 82.1rem;
+  height: 33.6rem;
+}
+
+button.btn-temp{
+  padding: 1rem;
+  margin-top: 3rem;
+
+  border: none;
+  border-radius: 1.6rem;
+
+  background-color: #2b2b2a;
+  color: white;
+
+  font-size: 2rem;
+}
+
+button.btn-temp:hover{
+  transition: .4s;
+}
+
+button.btn-temp:hover{
+  transform: scale(0.9)
+}
+
+.sectionONe {
+  text-align: center;
+}
+
+.sectionONe span{
+  font-size: 12rem;
+  color: #323238;
+}
+
+.buttons{
+  display: flex;
+  justify-content:space-between;
+}
+
+.buttons img:hover{
+  transition: .4s;
+}
+
+.buttons img:hover{
+  transform: scale(0.9)
+}
+
+.buttons img,
+.sectionTwo svg{
+  cursor: pointer;
+}
+
+.sectionTwo{
+  display: grid;
+  grid-template-areas: 
+  "forest rain"
+  "coffeShop fireplace";
+  gap: 3rem;
+}
+
+.sectionTwo img#forest{
+  grid-area: forest;
+}
+
+.sectionTwo img#rain{
+  grid-area: rain;
+}
+
+.sectionTwo img#coffeShop{
+  grid-area: coffeShop;
+}
+
+.sectionTwo img#fireplace{
+  grid-area: fireplace;
+}
+
+.sectionTwo svg{
+  background: #E1E1E6;
+  border-radius: 24px;
+
+  width: 10rem;
+  height: 10rem;
+
+  padding: 2.8rem;
+
+  transition: background 1s;
+}
+
+.sectionTwo svg:hover{
+  background: #02799D; 
+}
+
+svg:hover path {
+  fill: #ffff;
+}
